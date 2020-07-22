@@ -1,0 +1,15 @@
+web:
+  build: .
+
+  links:
+    - mysql
+
+  ports:
+    - "8001:8090"
+
+mysql:
+  image: mysql:8
+  environment:
+    - MYSQL_ROOT_PASSWORD=root
+    - MYSQL_DATABASE=bootdb 
+
