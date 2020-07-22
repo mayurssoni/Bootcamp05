@@ -17,4 +17,32 @@ public class TestExampleService {
         public void testSign() {
                 Assertions.assertEquals(es.checkSign(22), "22 is positive number");
         }
+	
+	@Test
+        public void testSign1() {
+                Assertions.assertEquals(es.checkSign(-22), "-22 is negative number");
+        }
+	
+	@Test
+        public void testSig2() {
+                Assertions.assertEquals(es.checkSign(0), "0 is neither positive nor negative");
+        }
+
+	@Test
+        public void testGCD() {
+                Assertions.assertEquals(es.calcGCD(5,45), "GCD of 5 and 45 is: 5");
+        }
+
+	@Test
+        public void testAreaSquare() {
+                Assertions.assertEquals(es.areaSquare(10), "Area of Square is: 100.0");
+        }
+
+        @Test
+        public void testAreaCircle() {
+                Assertions.assertEquals(es.areaCircle(4), "The area of circle is: 50.26548245743669");
+        }
+
+
+	
 }
