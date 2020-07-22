@@ -1,3 +1,5 @@
+package com;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -9,7 +11,7 @@ import com.ExampleService;
 @ExtendWith(SpringExtension.class)
 //@SpringBootTest(classes = Application.class)
 
-@SpringBootTest(classes={com.ExampleService.class})
+@SpringBootTest
 public class TestExampleService {
 	ExampleService es = new ExampleService();
         
@@ -43,6 +45,9 @@ public class TestExampleService {
                 Assertions.assertEquals(es.areaCircle(4), "The area of circle is: 50.26548245743669");
         }
 
-
+//	@Test
+//        public void testRandom() {
+//                Assertions.assertTrue("Error, random is too high", 70 >= es.generateRandom(5,70).random);
+//        }
 	
 }

@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestExampleService
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.147 s - in TestExampleService
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.197 s <<< FAILURE! - in TestExampleService
+testSign  Time elapsed: 0.015 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <22 is positive number> but was: <22 is positive number!>
+	at TestExampleService.testSign(TestExampleService.java:18)
+
