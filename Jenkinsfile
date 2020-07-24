@@ -22,9 +22,9 @@ node{
         sh "sudo $Docker_Home/bin/docker push 8460447701/my_first_repo:jenkins1"
     }
     
-//    stage('Docker Run Container'){
-//        sh "sudo $Docker_Home/bin/docker run -dti -p 8084:8090 8460447701/my_first_repo:jenkins1"
-//    }
+    stage('Docker Run Container'){
+        sh "sudo $Docker_Home/bin/docker run -dti -p 8084:8090 8460447701/my_first_repo:jenkins1"
+    }
     
 //    stage('Up in cloud foundry'){
 //        pushToCloudFoundry(
